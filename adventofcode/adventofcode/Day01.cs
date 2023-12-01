@@ -39,29 +39,8 @@ namespace adventofcode {
 "n9ne" };
 
             while ((temp = sr.ReadLine()) != null) {
-                int[] firstWrittenDigit = {Int32.MaxValue, -1};
-                int[] lastWrittenDigit = {-1, -1 };
                 for (int i = 0; i < digits.Length; i++) {
-                    if (temp.IndexOf(digits[i]) < firstWrittenDigit[0]) {
-                        if (temp.IndexOf(digits[i]) != -1) {
-                            firstWrittenDigit[0] = temp.IndexOf(digits[i]);
-                            firstWrittenDigit[1] = i;
-                        }
-                    }
-                    if (temp.IndexOf(digits[i]) > lastWrittenDigit[0]) {
-                        if (temp.IndexOf(digits[i]) != -1) {
-                            lastWrittenDigit[0] = temp.IndexOf(digits[i]);
-                            lastWrittenDigit[1] = i;
-                        }
-                    }
-                }
-
-                
-                if (firstWrittenDigit[1] != -1) {
-                    temp = temp.Replace(digits[firstWrittenDigit[1]], newDigits[firstWrittenDigit[1]]);
-                }
-                if (lastWrittenDigit[1] != -1) {
-                    temp = temp.Replace(digits[lastWrittenDigit[1]], newDigits[lastWrittenDigit[1]]);
+                    temp = temp.Replace(digits[i], newDigits[i]);
                 }
                 Console.WriteLine(temp);
 
