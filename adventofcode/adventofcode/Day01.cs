@@ -35,6 +35,8 @@ namespace adventofcode {
             StreamReader sr = new StreamReader(new FileStream("input_day01_part2.txt", FileMode.OpenOrCreate));
             string temp;
             string[] digits = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+            string[] newDigits = { "z0ro", "o1e", "t2o", "th3ee", "f4ur", "f5ve", "s6x", "se7en", "ei8ht", 
+"n9ne" };
 
             while ((temp = sr.ReadLine()) != null) {
                 int[] firstWrittenDigit = {Int32.MaxValue, -1};
@@ -53,12 +55,13 @@ namespace adventofcode {
                         }
                     }
                 }
+
                 
                 if (firstWrittenDigit[1] != -1) {
-                    temp = temp.Replace(digits[firstWrittenDigit[1]], Convert.ToString(firstWrittenDigit[1]));
+                    temp = temp.Replace(digits[firstWrittenDigit[1]], newDigits[firstWrittenDigit[1]]);
                 }
                 if (lastWrittenDigit[1] != -1) {
-                    temp = temp.Replace(digits[lastWrittenDigit[1]], Convert.ToString(lastWrittenDigit[1]));
+                    temp = temp.Replace(digits[lastWrittenDigit[1]], newDigits[lastWrittenDigit[1]]);
                 }
                 Console.WriteLine(temp);
 
