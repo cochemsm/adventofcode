@@ -43,19 +43,21 @@ namespace adventofcode {
                     if (temp.IndexOf(digits[i]) < firstWrittenDigit[0]) {
                         if (temp.IndexOf(digits[i]) != -1) {
                             firstWrittenDigit[0] = temp.IndexOf(digits[i]);
+                            firstWrittenDigit[1] = i;
                         }
-                        firstWrittenDigit[1] = i;
                     }
                     if (temp.IndexOf(digits[i]) > lastWrittenDigit[0]) {
-                        lastWrittenDigit[0] = temp.IndexOf(digits[i]);
-                        lastWrittenDigit[1] = i;
+                        if (temp.IndexOf(digits[i]) != -1) {
+                            lastWrittenDigit[0] = temp.IndexOf(digits[i]);
+                            lastWrittenDigit[1] = i;
+                        }
                     }
-                    
                 }
+                
                 if (firstWrittenDigit[1] != -1) {
                     temp = temp.Replace(digits[firstWrittenDigit[1]], Convert.ToString(firstWrittenDigit[1]));
                 }
-                if (lastWrittenDigit[1] != Int32.MaxValue) {
+                if (lastWrittenDigit[1] != -1) {
                     temp = temp.Replace(digits[lastWrittenDigit[1]], Convert.ToString(lastWrittenDigit[1]));
                 }
                 Console.WriteLine(temp);
