@@ -8,7 +8,7 @@ using System.IO;
 namespace adventofcode {
     internal class Program {
         static void Main(string[] args) {
-            Console.WriteLine(Day01.Part2());
+            Console.WriteLine(Day02.Part2());
         }
     }
 }

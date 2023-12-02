@@ -5,3 +5,10 @@ C:\Users\magnus.cochems\Documents\GitHub\adventofcode\adventofcode\adventofcode\
 C:\Users\magnus.cochems\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.csproj.CoreCompileInputs.cache
 C:\Users\magnus.cochems\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.exe
 C:\Users\magnus.cochems\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.pdb
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\bin\Debug\adventofcode.exe.config
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\bin\Debug\adventofcode.exe
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\bin\Debug\adventofcode.pdb
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.csproj.AssemblyReference.cache
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.csproj.CoreCompileInputs.cache
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.exe
+C:\Users\Magnus One\Documents\GitHub\adventofcode\adventofcode\adventofcode\obj\Debug\adventofcode.pdb
